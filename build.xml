@@ -26,7 +26,8 @@
 
 <target name="compile" depends="init">
 	<javac srcdir="src"
-		destdir="build/classes"/>
+		destdir="build/classes"
+		includeantruntime="false"/>
 </target>
 
 <target name="jar" depends="compile">
